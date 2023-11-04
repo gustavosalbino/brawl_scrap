@@ -1,3 +1,4 @@
+import os
 from datetime import datetime
 
 from reader import get_last_log_path, read_battle_log_items
