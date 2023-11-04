@@ -1,6 +1,3 @@
-import os
-os.chdir("/Users/gschmitzalbi/PycharmProjects/brawlGptTest")
-
 from datetime import datetime
 
 from reader import get_last_log_path, read_battle_log_items
