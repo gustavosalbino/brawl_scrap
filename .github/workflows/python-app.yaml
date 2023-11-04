@@ -41,7 +41,7 @@ jobs:
       run: |
         mkdir data
         ls
-        python usecases/gscrap_battle_logs.py
+        python usecases/scrap_battle_logs.py
     - name: Archive production artifacts
       uses: actions/upload-artifact@v3
       with:
