@@ -1,4 +1,9 @@
 import os
+
+print(os.getcwd())
+os.chdir("../")
+print(os.getcwd())
+
 from datetime import datetime
 
 from src.reader import get_last_log_path, read_battle_log_items
