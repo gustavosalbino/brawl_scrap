@@ -37,6 +37,9 @@ jobs:
 #    - name: Test with pytest
 #      run: |
 #        pytest
+    - name: set pythonpath
+      run: |
+        echo "PYTHONPATH=src" >> $GITHUB_ENV
     - name: Scrap players battle history
       run: |
         mkdir data
