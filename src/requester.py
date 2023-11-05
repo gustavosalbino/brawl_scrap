@@ -1,10 +1,11 @@
 from typing import Optional
 
 import requests
+import os
 
 API_ADDRESS = "https://api.brawlstars.com/v1"
 
-API_KEY = ""
+API_KEY = os.getenv('API_KEY')
 
 API_PROXY_ADDRESS = "https://bsproxy.royaleapi.dev/v1"
 
