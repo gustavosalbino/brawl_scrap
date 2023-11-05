@@ -37,14 +37,14 @@ jobs:
 #    - name: Test with pytest
 #      run: |
 #        pytest
-    - name: set pythonpath
-      run: |
-        echo "PYTHONPATH=src" >> $GITHUB_ENV
+#    - name: set pythonpath
+#      run: |
+#        echo "PYTHONPATH=src" >> $GITHUB_ENV
     - name: Scrap players battle history
       run: |
         mkdir data
         ls
-        python usecases/scrap_battle_logs.py
+        python scrap_battle_logs.py
     - name: Archive production artifacts
       uses: actions/upload-artifact@v3
       with:
