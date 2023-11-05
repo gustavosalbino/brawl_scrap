@@ -1,7 +1,7 @@
 from datetime import datetime
 from typing import Tuple
 
-from requester import request_player_recent_battle_log
+from src.requester import request_player_recent_battle_log
 
 
 def scrap_selected_player_recent_battle_log(player_tag: str) -> Tuple[dict, datetime]:

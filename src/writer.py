@@ -4,7 +4,7 @@ from typing import Optional
 
 
 def write_battle_log(player_tag: str, battle_log: dict, request_time: Optional[datetime] = None,
-                     str_format: str = "%Y-%m-%d %H:%M:%S"):
+                     str_format: str = "%Y-%m-%d %H%M%S"):
     folder = f"data/{player_tag}"
 
     formatted_time = request_time.strftime(str_format)

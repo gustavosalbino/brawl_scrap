@@ -1,11 +1,12 @@
 import os
-os.chdir("/Users/gschmitzalbi/PycharmProjects/brawlGptTest")
+
+print(os.getcwd())
 
 from datetime import datetime
 
-from reader import get_last_log_path, read_battle_log_items
-from scrapper import scrap_selected_player_recent_battle_log
-from writer import write_battle_log
+from src.reader import get_last_log_path, read_battle_log_items
+from src.scrapper import scrap_selected_player_recent_battle_log
+from src.writer import write_battle_log
 
 # PLAYERS_TAG_LIST = ["GUSTAVO", "PRUDENTE" "JESSE"]
 PLAYERS_TAG_LIST = ["%232LCR8UUGP", "%2328PYC9PVC", "%239LCPUQ8U"]
